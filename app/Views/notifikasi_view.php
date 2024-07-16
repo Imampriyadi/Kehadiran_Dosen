@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifikasi</title>
+    <title>notification</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -72,14 +72,14 @@
         <div class="card">
             <div class="card-header d-flex align-items-center">
                 <i class="fas fa-bell header-icon"></i>
-                <h3 class="ml-3">Notifikasi</h3>
+                <h3 class="ml-3">notification</h3>
             </div>
             <div class="card-body">
                 <div class="alert alert-info">
-                    <h4 class="alert-heading">Pesan Terkirim!</h4>
+                    <h4 class="alert-heading">Message sent!</h4>
                     <p><?= $message; ?></p>
                 </div>
-                <a href="/dosen" class="btn btn-custom"><i class="fas fa-arrow-left"></i> Kembali ke Data Dosen</a>
+                <a href="/dosen" class="btn btn-custom"><i class="fas fa-arrow-left"></i> Return to Lecturer Data</a>
             </div>
         </div>
     </div>

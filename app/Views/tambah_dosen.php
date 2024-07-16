@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Dosen</title>
+    <title>Add Lecturer</title>
     <!-- AdminLTE CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
     <!-- Font Awesome -->
@@ -109,7 +109,7 @@
         <nav class="main-header navbar navbar-expand navbar-dark">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i> Tambah Dosen Universitas Belum Bayar</a>
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i> Added Udar Ider University Lecturer</a>
                 </li>
             </ul>
         </nav>
@@ -118,7 +118,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <a href="/" class="brand-link">
-                <span class="brand-text font-weight-light">Universitas Belum Bayar</span>
+                <span class="brand-text font-weight-light">Udar Ider University</span>
             </a>
             <div class="sidebar">
                 <nav class="mt-2">
@@ -126,13 +126,13 @@
                         <li class="nav-item">
                             <a href="/" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
-                                <p>Dashboard</p>
+                                <p>DASHBOARD</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="/dosen" class="nav-link active">
                                 <i class="nav-icon fas fa-book"></i>
-                                <p>Data Dosen</p>
+                                <p>LECTURER DATA</p>
                             </a>
                         </li>
                     </ul>
@@ -149,7 +149,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Form Tambah Dosen</h3>
+                                    <h3 class="card-title">Add Lecturer Form</h3>
                                 </div>
                                 <div class="card-body">
                                     <?php if (!empty(session()->getFlashdata('message'))) : ?>
@@ -161,19 +161,19 @@
                                     <!-- Form Tambah Data Dosen -->
                                     <form action="/tambah-data-dosen" method="post">
                                         <div class="form-group">
-                                            <label for="kode_dosen">Kode Dosen:</label>
-                                            <input type="text" name="kode_dosen" id="kode_dosen" class="form-control" placeholder="Masukkan Kode Dosen" required>
+                                            <label for="kode_dosen">Lecturer Code:</label>
+                                            <input type="text" name="kode_dosen" id="kode_dosen" class="form-control" placeholder="Enter Lecturer Code" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="nama_dosen">Nama Dosen:</label>
-                                            <input type="text" name="nama_dosen" id="nama_dosen" class="form-control" placeholder="Masukkan Nama Dosen" required>
+                                            <label for="nama_dosen">Lecturer Name:</label>
+                                            <input type="text" name="nama_dosen" id="nama_dosen" class="form-control" placeholder="Enter the Lecturer's Name" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="nama_matkul">Nama Mata Kuliah:</label>
-                                            <input type="text" name="nama_matkul" id="nama_matkul" class="form-control" placeholder="Masukkan Nama Mata Kuliah" required>
+                                            <label for="nama_matkul">Course Name:</label>
+                                            <input type="text" name="nama_matkul" id="nama_matkul" class="form-control" placeholder="Enter the Course Name" required>
                                         </div>
-                                        <button type="submit" class="btn btn-dark"><i class="fas fa-plus"></i> Tambah Dosen</button>
-                                        <a href="/dosen" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Kembali</a>
+                                        <button type="submit" class="btn btn-dark"><i class="fas fa-plus"></i> Add Lecturer</button>
+                                        <a href="/dosen" class="btn btn-danger"><i class="fas fa-arrow-left"></i> Return</a>
                                     </form>
                                 </div>
                             </div>

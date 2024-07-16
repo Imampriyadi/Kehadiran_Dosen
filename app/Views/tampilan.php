@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dosen Universitas Belum Bayar</title>
+    <title>Udar Ider University Lecturer</title>
     <!-- AdminLTE CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
     <!-- Font Awesome -->
@@ -107,7 +107,7 @@
         <nav class="main-header navbar navbar-expand navbar-dark navbar-dark">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i> Data Dosen Universitas Belum Bayar</a>
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i> Udar Ider University Lecturer Data</a>
                 </li>
             </ul>
         </nav>
@@ -117,7 +117,7 @@
         <aside class="main-sidebar elevation-4">
             <a href="/" class="brand-link">
                 <i class="fas fa-university"></i>
-                <span class="brand-text font-weight-light">Universitas Belum Bayar</span>
+                <span class="brand-text font-weight-light"> Udar Ider University</span>
             </a>
             <div class="sidebar">
                 <nav class="mt-2">
@@ -131,7 +131,7 @@
                         <li class="nav-item">
                             <a href="/dosen" class="nav-link active">
                                 <i class="nav-icon fas fa-book"></i>
-                                <p>Data Dosen</p>
+                                <p>lecturer Data</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -159,9 +159,9 @@
                             <?php endif ?>
 
                             <div class="d-flex justify-content-between align-items-center">
-                                <button onclick="window.location.href='/tambah-data-dosen'" class="btn btn-dark mb-3"><i class="fas fa-plus"></i> TAMBAH DATA</button>
+                                <button onclick="window.location.href='/tambah-data-dosen'" class="btn btn-dark mb-3"><i class="fas fa-plus"></i> ADD DATA</button>
                                 <div class="color-picker">
-                                    <label for="bg-color-picker">Ubah Warna:</label>
+                                    <label for="bg-color-picker">change color:</label>
                                     <input type="color" id="bg-color-picker" value="#343a40">
                                     <label for="text-color-picker">Text :</label>
                                     <input type="color" id="text-color-picker" value="#e9ecef">
@@ -171,7 +171,7 @@
                             <!-- Tabel Data Dosen -->
                             <div class="card anime-card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Data Dosen</h3>
+                                    <h3 class="card-title">lecturer Data</h3>
                                     <div class="card-tools">
                                         <input type="text" class="form-control form-control-sm" id="search" placeholder="Search">
                                     </div>
@@ -180,10 +180,10 @@
                                     <table class="table table-bordered table-striped">
                                         <thead class="thead-dark">
                                             <tr>
-                                                <th>Kode Dosen</th>
-                                                <th>Nama Dosen</th>
-                                                <th>Nama Mata Kuliah</th>
-                                                <th>Konfirmasi Kehadiran</th>
+                                                <th>Lecturer Code</th>
+                                                <th>Lecturer Name</th>
+                                                <th>Course Name</th>
+                                                <th>confirmation of attendance</th>
                                             </tr>
                                         </thead>
                                         <tbody id="dosenTable">
@@ -193,8 +193,8 @@
                                                     <td><?php echo $dosen['nama_dosen'] ?></td>
                                                     <td><?php echo $dosen['nama_matkul'] ?></td>
                                                     <td class="text-center">
-                                                        <a href="notifikasi/dosen-masuk/<?= $dosen['id_dosen']; ?>" class="btn btn-success btn-sm"><i class="fas fa-check"></i> Akan Hadir</a>
-                                                        <a href="notifikasi/dosen-tidak-masuk/<?= $dosen['id_dosen']; ?>" class="btn btn-danger btn-sm"><i class="fas fa-times"></i> Berhalangan Hadir</a>
+                                                        <a href="notifikasi/dosen-masuk/<?= $dosen['id_dosen']; ?>" class="btn btn-success btn-sm"><i class="fas fa-check"></i> Will be present</a>
+                                                        <a href="notifikasi/dosen-tidak-masuk/<?= $dosen['id_dosen']; ?>" class="btn btn-danger btn-sm"><i class="fas fa-times"></i> Unable to attend</a>
                                                     </td>
                                                 </tr>
                                             <?php endforeach ?>
@@ -211,7 +211,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer">
-            <strong>Muhammad Ali Angga</strong>
+            <strong>Imam Priyadi</strong> <strong> @2024 </strong>
         </footer>
     </div>
 
