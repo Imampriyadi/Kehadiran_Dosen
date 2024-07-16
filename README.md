@@ -1,4 +1,4 @@
-# Chat-Bot-Telegram-dengan-CI4 DIBUAT OLEH MUHAMMAD ALI ANGGA
+# Chat-Bot-Telegram-dengan-CI4 DIBUAT OLEH IMAM PRIYADI
 
 # CodeIgniter 4 Application Starter
 
